@@ -1,5 +1,5 @@
 global:
-  domain: stream-saas.alice-platform.com
+  domain: stream-saas.alicelaw.net
 frontend:
   replicas: 2
   image: stream-saas/frontend:latest
