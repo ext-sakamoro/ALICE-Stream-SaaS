@@ -26,6 +26,7 @@ struct Health { status: String, version: String, uptime_secs: u64, total_jobs: u
 
 // Optimize
 #[derive(Deserialize)]
+#[allow(dead_code)]
 struct OptimizeRequest { url: Option<String>, target_bitrate: Option<u32>, codec: Option<String>, resolution: Option<String> }
 #[derive(Serialize)]
 struct OptimizeResponse {
@@ -38,6 +39,7 @@ struct AbrRung { resolution: String, bitrate_kbps: u32, fps: u32, codec: String 
 
 // Ingest
 #[derive(Deserialize)]
+#[allow(dead_code)]
 struct IngestRequest { source_url: Option<String>, output_format: Option<String>, record: Option<bool> }
 #[derive(Serialize)]
 struct IngestResponse {
@@ -59,6 +61,7 @@ struct TranscodeResponse {
 
 // Analyze
 #[derive(Deserialize)]
+#[allow(dead_code)]
 struct AnalyzeRequest { url: Option<String> }
 #[derive(Serialize)]
 struct AnalyzeResponse {
